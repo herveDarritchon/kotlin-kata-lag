@@ -14,10 +14,13 @@ You could help ABEAS Corp by finding the best request combination to maximize ga
 
 Requests are sorted. Here is a sample file with 4 requests.
 
-`AF514 0 5 10`
-`CO5 3 7 14`
-`AF515 5 9 7`
-`BA01 6 9 8
+`AF514 0 5 10
+
+CO5 3 7 14
+
+AF515 5 9 7
+
+BA01 6 9 8`
 
 The best combination here is AF514 and BA01 with a gain of 10+8=18.
 

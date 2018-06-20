@@ -1,32 +1,22 @@
-## Synopsis
+#Kata Lags
+##About this Kata
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This kata seems simple at first a glance, but wait to explore it before said it’s an easy one.
 
-## Code Example
+##Problem Description
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+ABEAS Corp is a little company with only one plane. ABEAS Corp’s customers ask for this plane to help them sometimes. They send rent request with start time, travel duration, and a price they will paid.
 
-## Motivation
+You could help ABEAS Corp by finding the best request combination to maximize gain.
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+##Sample Test Cases
 
-## Installation
+Requests are sorted. Here is a sample file with 4 requests.
 
-Provide code examples and explanations of how to get the project.
+AF514 0 5 10
+CO5 3 7 14
+AF515 5 9 7
+BA01 6 9 8
+The best combination here is AF514 and BA01 with a gain of 10+8=18.
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
-
+Depending on how you want to turn this Kata, the output could be 18

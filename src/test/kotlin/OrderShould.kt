@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test
 class OrderShould {
     @Test
     internal fun ReturnAnOrderWhenParsingASingleLineOrderList() {
-        val order = Order("AF34 0 5 12")
+        val order : Order  = Order.fromString("AF34 0 5 12")
         assertEquals("AF34", order.orderId)
         assertEquals(0, order.departureTime)
         assertEquals(5, order.duration)

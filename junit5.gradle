@@ -3,5 +3,8 @@ junitPlatform {
         tags {
             //include 'fast'
         }
+        engines {
+            include 'spek'
+        }
     }
 }

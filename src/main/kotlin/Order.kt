@@ -1,8 +1,13 @@
-class Order constructor(orderLine : String) {
+data class Order
+(val orderId: String, val departureTime: Int, val duration: Int, val price: Int) {
 
-    val orderId : String = orderLine.split(" ")[0]
-    val departureTime : Int = orderLine.split(" ")[1].toInt()
-    val duration : Int = orderLine.split(" ")[2].toInt()
-    val price : Int = orderLine.split(" ")[3].toInt()
-
+    companion object {
+        fun fromString(stringOrder: String): Order {
+            val orderId: String = stringOrder.split(" ")[0]
+            val departureTime: Int = stringOrder.split(" ")[1].toInt()
+            val duration: Int = stringOrder.split(" ")[2].toInt()
+            val price: Int = stringOrder.split(" ")[3].toInt()
+            return Order(orderId, departureTime, duration, price)
+        }
+    }
 }

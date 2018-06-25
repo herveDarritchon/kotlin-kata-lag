@@ -1,6 +1,9 @@
 class LagOrder {
-    fun compute(firstOrder: String, secondOrder: String = ""): Int {
-      return if(secondOrder.isBlank()) 12 else 15
+    fun compute(vararg ordersAsStrings: String): Int {
+
+        return ordersAsStrings.mapNotNull { Order.from(it) }
+                .map { it.price }
+                .reduce { acc, next -> acc + next }
     }
 
 }
